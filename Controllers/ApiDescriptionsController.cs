@@ -30,7 +30,8 @@ namespace ApiExplorerIssue.Controllers
                                 new
                                 {
                                     name = parameterDescription.Name,
-                                    source = parameterDescription.Source
+                                    source = parameterDescription.Source,
+                                    modelType = parameterDescription.ModelMetadata.ModelType.ToString()
                                 })
                     });
 
